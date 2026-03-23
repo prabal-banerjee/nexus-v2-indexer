@@ -60,7 +60,7 @@ export type handlerContext = $$handlerContext;
 export type vaultEvent = Entities_VaultEvent_t;
 export type VaultEvent = vaultEvent;
 
-export type Transaction_t = {};
+export type Transaction_t = { readonly hash: string };
 
 export type Block_t = {
   readonly number: number; 
@@ -74,7 +74,7 @@ export type AggregatedBlock_t = {
   readonly timestamp: number
 };
 
-export type AggregatedTransaction_t = {};
+export type AggregatedTransaction_t = { readonly hash: string };
 
 export type eventLog<params> = Internal_genericEvent<params,Block_t,Transaction_t>;
 export type EventLog<params> = eventLog<params>;

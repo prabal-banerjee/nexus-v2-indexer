@@ -51,9 +51,9 @@ type vaultEvent = Entities.VaultEvent.t
 
 module Transaction = {
   @genType
-  type t = {}
+  type t = {hash: string}
 
-  let schema = S.object((_): t => {})
+  let schema = S.object((s): t => {hash: s.field("hash", S.string)})
 }
 
 module Block = {
@@ -84,7 +84,7 @@ module AggregatedBlock = {
 }
 module AggregatedTransaction = {
   @genType
-  type t = {}
+  type t = {hash: string}
 }
 
 @genType.as("EventLog")
