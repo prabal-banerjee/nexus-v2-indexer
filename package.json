@@ -2,7 +2,6 @@
   "name": "nexus-vault-indexer",
   "private": true,
   "version": "0.1.0",
-  "type": "module",
   "scripts": {
     "init": "npx tsx init.ts",
     "init:dry-run": "npx tsx init.ts --dry-run",
