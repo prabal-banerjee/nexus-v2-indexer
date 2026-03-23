@@ -1,4 +1,4 @@
-import { Vault } from "generated";
+import { Vault } from "../generated/src/Handlers.gen";
 
 Vault.Deposit.handler(async ({ event, context }) => {
   context.VaultEvent.set({
