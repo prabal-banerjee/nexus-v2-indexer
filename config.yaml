@@ -1,0 +1,33 @@
+name: nexus-vault-indexer
+contracts:
+  - name: Vault
+    handler: src/EventHandlers.ts
+    events:
+      - event: Deposit(bytes32 indexed requestHash, address from)
+      - event: Fulfilment(bytes32 indexed requestHash, address from, address solver)
+networks:
+  - id: 11155111      # Sepolia
+    start_block: 10499100
+    contracts:
+      - name: Vault
+        address:
+          - "0x56a1646ec5ecaf69875e64400bbf251a38e24fbd"
+  - id: 421614      # Arbitrum Sepolia
+    start_block: 252614720
+    contracts:
+      - name: Vault
+        address:
+          - "0x56a1646ec5ecaf69875e64400bbf251a38e24fbd"
+  - id: 84532      # Base Sepolia
+    start_block: 39218010
+    contracts:
+      - name: Vault
+        address:
+          - "0x56a1646ec5ecaf69875e64400bbf251a38e24fbd"
+  - id: 80002      # Polygon Amoy
+    start_block: 35538380
+    contracts:
+      - name: Vault
+        address:
+          - "0x56a1646ec5ecaf69875e64400bbf251a38e24fbd"
+unordered_multichain_mode: true

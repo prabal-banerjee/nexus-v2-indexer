@@ -1,0 +1,12 @@
+type VaultEvent @entity {
+  id: ID!
+  requestHash: String! @index
+  eventType: String!
+  chainId: Int!
+  txHash: String!
+  blockNumber: Int!
+  logIndex: Int!
+  emitter: String!
+  solver: String
+  blockTimestamp: Int!
+}

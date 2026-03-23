@@ -1,0 +1,17 @@
+{
+  "name": "nexus-vault-indexer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "init": "npx tsx init.ts",
+    "init:dry-run": "npx tsx init.ts --dry-run",
+    "codegen": "envio codegen",
+    "dev": "envio dev",
+    "start": "envio start"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "@types/node": "^22.15.3"
+  }
+}
