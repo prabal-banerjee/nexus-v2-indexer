@@ -1,5 +1,7 @@
 # Nexus Vault Indexer
 
+> indexer for Nexus vault events
+
 An [Envio HyperIndex](https://docs.envio.dev) project that indexes Vault `Deposit` and `Fulfilment` events across multiple EVM chains. Once deployed, it provides a hosted GraphQL endpoint that any service (e.g. the [Nexus Explorer](../explorer/)) can query for on-chain event data.
 
 ## What it indexes
