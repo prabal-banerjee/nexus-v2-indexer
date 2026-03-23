@@ -1,1 +1,5 @@
-generated/**
+# Generated build artifacts (but keep the folder structure and essential files)
+generated/lib/
+generated/src/**/*.res.js
+generated/src/**/*.res.mjs
+generated/persisted_state.envio.json
