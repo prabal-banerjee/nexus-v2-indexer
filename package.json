@@ -12,6 +12,7 @@
   "devDependencies": {
     "@types/node": "^22.15.3",
     "envio": "^2.32.10",
-    "tsx": "^4.19.4"
+    "tsx": "^4.19.4",
+    "typescript": "^6.0.2"
   }
 }
