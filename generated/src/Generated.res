@@ -124,6 +124,31 @@ let makeGeneratedConfig = () => {
         sources: NetworkSources.evm(~chain, ~contracts=[{name: "Vault",events: [Types.Vault.Deposit.register(), Types.Vault.Fulfilment.register()],abi: Types.Vault.abi}], ~hyperSync=Some("https://11155111.hypersync.xyz"), ~allEventSignatures=[Types.Vault.eventSignatures]->Belt.Array.concatMany, ~shouldUseHypersyncClientDecoder=true, ~rpcs=[], ~lowercaseAddresses=false)
       }
     },
+    {
+      let contracts = [
+        {
+          Config.name: "Vault",
+          abi: Types.Vault.abi,
+          addresses: [
+            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3"->Address.Evm.fromStringOrThrow
+,
+          ],
+          events: [
+            (Types.Vault.Deposit.register() :> Internal.eventConfig),
+            (Types.Vault.Fulfilment.register() :> Internal.eventConfig),
+          ],
+          startBlock: None,
+        },
+      ]
+      let chain = ChainMap.Chain.makeUnsafe(~chainId=11155420)
+      {
+        Config.maxReorgDepth: 0,
+        startBlock: 41637985,
+        id: 11155420,
+        contracts,
+        sources: NetworkSources.evm(~chain, ~contracts=[{name: "Vault",events: [Types.Vault.Deposit.register(), Types.Vault.Fulfilment.register()],abi: Types.Vault.abi}], ~hyperSync=Some("https://11155420.hypersync.xyz"), ~allEventSignatures=[Types.Vault.eventSignatures]->Belt.Array.concatMany, ~shouldUseHypersyncClientDecoder=true, ~rpcs=[], ~lowercaseAddresses=false)
+      }
+    },
   ]
 
   Config.make(
