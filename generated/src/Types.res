@@ -270,7 +270,7 @@ module MakeRegister = (Event: Event) => {
 module Vault = {
 let abi = Ethers.makeAbi((%raw(`[{"type":"event","name":"Deposit","inputs":[{"name":"requestHash","type":"bytes32","indexed":true},{"name":"from","type":"address","indexed":false}],"anonymous":false},{"type":"event","name":"Fulfilment","inputs":[{"name":"requestHash","type":"bytes32","indexed":true},{"name":"from","type":"address","indexed":false},{"name":"solver","type":"address","indexed":false}],"anonymous":false}]`): Js.Json.t))
 let eventSignatures = ["Deposit(bytes32 indexed requestHash, address from)", "Fulfilment(bytes32 indexed requestHash, address from, address solver)"]
-@genType type chainId = [#80002 | #84532 | #421614 | #11155111 | #11155420]
+@genType type chainId = [#80002 | #84532 | #421614 | #11155111]
 let contractName = "Vault"
 
 module Deposit = {
@@ -436,4 +436,4 @@ let register = (): Internal.evmEventConfig => {
 type chainId = int
 
 @genType
-type chain = [#80002 | #84532 | #421614 | #11155111 | #11155420]
+type chain = [#80002 | #84532 | #421614 | #11155111]

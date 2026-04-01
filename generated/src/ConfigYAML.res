@@ -147,35 +147,6 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       }
     )
   },
-  {
-    let contracts = Js.Dict.fromArray([
-      (
-        "Vault",
-        {
-          name: "Vault",
-          abi: Types.Vault.abi,
-          addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
-          ],
-          events: [
-            Types.Vault.Deposit.name,
-            Types.Vault.Fulfilment.name,
-          ],
-        }
-      ),
-    ])
-    let chain = ChainMap.Chain.makeUnsafe(~chainId=11155420)
-    (
-      chain,
-      {
-        confirmedBlockThreshold: 0,
-        syncSource: HyperSync({endpointUrl: "https://11155420.hypersync.xyz"}),
-        startBlock: 41637985,
-        contracts,
-        lowercaseAddresses: false
-      }
-    )
-  },
 ])
 
 @genType

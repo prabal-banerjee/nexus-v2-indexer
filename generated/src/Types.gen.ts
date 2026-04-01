@@ -105,7 +105,7 @@ export type handlerWithOptions<eventArgs,loaderReturn,eventFilters> = fnWithEven
 
 export type contractRegisterWithOptions<eventArgs,eventFilters> = fnWithEventConfig<HandlerTypes_contractRegister<eventArgs>,HandlerTypes_eventConfig<eventFilters>>;
 
-export type Vault_chainId = 80002 | 84532 | 421614 | 11155111 | 11155420;
+export type Vault_chainId = 80002 | 84532 | 421614 | 11155111;
 
 export type Vault_Deposit_eventArgs = { readonly requestHash: string; readonly from: Address_t };
 
@@ -209,4 +209,4 @@ export type Vault_Fulfilment_eventFilters =
 
 export type chainId = number;
 
-export type chain = 80002 | 84532 | 421614 | 11155111 | 11155420;
+export type chain = 80002 | 84532 | 421614 | 11155111;

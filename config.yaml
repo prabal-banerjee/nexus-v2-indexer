@@ -12,12 +12,6 @@ networks:
       - name: Vault
         address:
           - "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3"
-  - id: 11155420      # OP Sepolia
-    start_block: 41637985
-    contracts:
-      - name: Vault
-        address:
-          - "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3"
   - id: 421614      # Arbitrum Sepolia
     start_block: 255760289
     contracts:
