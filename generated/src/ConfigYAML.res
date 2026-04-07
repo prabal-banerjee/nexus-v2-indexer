@@ -39,7 +39,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
           name: "Vault",
           abi: Types.Vault.abi,
           addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
+            "0x86B60E813f9b739516dDbDc443526be5Ef8336aa",
           ],
           events: [
             Types.Vault.Deposit.name,
@@ -54,7 +54,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       {
         confirmedBlockThreshold: 200,
         syncSource: HyperSync({endpointUrl: "https://80002.hypersync.xyz"}),
-        startBlock: 35975481,
+        startBlock: 36186485,
         contracts,
         lowercaseAddresses: false
       }
@@ -68,7 +68,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
           name: "Vault",
           abi: Types.Vault.abi,
           addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
+            "0x86B60E813f9b739516dDbDc443526be5Ef8336aa",
           ],
           events: [
             Types.Vault.Deposit.name,
@@ -83,7 +83,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       {
         confirmedBlockThreshold: 200,
         syncSource: HyperSync({endpointUrl: "https://84532.hypersync.xyz"}),
-        startBlock: 39655110,
+        startBlock: 39860000,
         contracts,
         lowercaseAddresses: false
       }
@@ -97,7 +97,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
           name: "Vault",
           abi: Types.Vault.abi,
           addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
+            "0x86B60E813f9b739516dDbDc443526be5Ef8336aa",
           ],
           events: [
             Types.Vault.Deposit.name,
@@ -112,7 +112,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       {
         confirmedBlockThreshold: 0,
         syncSource: HyperSync({endpointUrl: "https://421614.hypersync.xyz"}),
-        startBlock: 255760289,
+        startBlock: 257100000,
         contracts,
         lowercaseAddresses: false
       }
@@ -126,7 +126,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
           name: "Vault",
           abi: Types.Vault.abi,
           addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
+            "0x86B60E813f9b739516dDbDc443526be5Ef8336aa",
           ],
           events: [
             Types.Vault.Deposit.name,
@@ -141,7 +141,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       {
         confirmedBlockThreshold: 200,
         syncSource: HyperSync({endpointUrl: "https://11155111.hypersync.xyz"}),
-        startBlock: 10570133,
+        startBlock: 10604152,
         contracts,
         lowercaseAddresses: false
       }
@@ -155,7 +155,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
           name: "Vault",
           abi: Types.Vault.abi,
           addresses: [
-            "0xfcFB38BA4f808c569e815Db89f71D23FaC5bacE3",
+            "0x86B60E813f9b739516dDbDc443526be5Ef8336aa",
           ],
           events: [
             Types.Vault.Deposit.name,
@@ -170,7 +170,7 @@ let publicConfig = ChainMap.fromArrayUnsafe([
       {
         confirmedBlockThreshold: 0,
         syncSource: HyperSync({endpointUrl: "https://11155420.hypersync.xyz"}),
-        startBlock: 41637985,
+        startBlock: 41673742,
         contracts,
         lowercaseAddresses: false
       }
