@@ -37,13 +37,13 @@ networks:
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
   - id: 5115      # Citrea Testnet
-    start_block: 30536236
+    start_block: 25735441
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
   - id: 10143      # Monad Testnet
-    start_block: 25864650
+    start_block: 30538378
     contracts:
       - name: Vault
         address:
