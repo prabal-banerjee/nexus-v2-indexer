@@ -36,6 +36,18 @@ networks:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 5115      # Citrea Testnet
+    start_block: 30536236
+    contracts:
+      - name: Vault
+        address:
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 10143      # Monad Testnet
+    start_block: 25864650
+    contracts:
+      - name: Vault
+        address:
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
 unordered_multichain_mode: true
 field_selection:
   transaction_fields:
