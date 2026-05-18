@@ -84,12 +84,6 @@ networks:
       - name: Vault
         address:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
-  - id: 8217       # Kaia (nexus-v1)
-    start_block: 216917643
-    contracts:
-      - name: Vault
-        address:
-          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
   - id: 8453       # Base (nexus-v1)
     start_block: 46160439
     contracts:
