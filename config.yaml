@@ -6,48 +6,126 @@ contracts:
       - event: Deposit(bytes32 indexed requestHash, address from)
       - event: Fulfilment(bytes32 indexed requestHash, address from, address solver)
 networks:
-  - id: 11155111      # Sepolia
+  - id: 11155111      # Sepolia (nexus-v2)
     start_block: 10604152
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 11155420      # OP Sepolia
+  - id: 11155420      # OP Sepolia (nexus-v2)
     start_block: 41673742
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 421614      # Arbitrum Sepolia
+  - id: 421614      # Arbitrum Sepolia (nexus-v2)
     start_block: 257100000
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 84532      # Base Sepolia
+  - id: 84532      # Base Sepolia (nexus-v2)
     start_block: 39860000
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 80002      # Polygon Amoy
+  - id: 80002      # Polygon Amoy (nexus-v2)
     start_block: 36186485
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 5115      # Citrea Testnet
+  - id: 5115      # Citrea Testnet (nexus-v2)
     start_block: 25735441
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 10143      # Monad Testnet
+  - id: 10143      # Monad Testnet (nexus-v2)
     start_block: 30538378
     contracts:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 1          # Ethereum Mainnet (nexus-v1)
+    start_block: 25122336
+    contracts:
+      - name: Vault
+        address:
+          - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
+  - id: 10         # Optimism (nexus-v1)
+    start_block: 151755723
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 56         # BSC (nexus-v1)
+    start_block: 99012181
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 137        # Polygon (nexus-v1)
+    start_block: 87068903
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 143        # Monad Mainnet (nexus-v1)
+    start_block: 75405316
+    contracts:
+      - name: Vault
+        address:
+          - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
+  - id: 999        # HyperEVM (nexus-v1)
+    start_block: 35436098
+    contracts:
+      - name: Vault
+        address:
+          - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
+  - id: 8217       # Kaia (nexus-v1)
+    start_block: 216917643
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 8453       # Base (nexus-v1)
+    start_block: 46160439
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 42161      # Arbitrum One (nexus-v1)
+    start_block: 464126370
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 43114      # Avalanche C-Chain (nexus-v1)
+    start_block: 85752042
+    contracts:
+      - name: Vault
+        address:
+          - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
+  - id: 50104      # Sophon (nexus-v1)
+    start_block: 29391337
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 59144      # Linea (nexus-v1)
+    start_block: 30691399
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+  - id: 534352     # Scroll (nexus-v1)
+    start_block: 33745772
+    contracts:
+      - name: Vault
+        address:
+          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
 unordered_multichain_mode: true
 field_selection:
   transaction_fields:
