@@ -48,60 +48,69 @@ networks:
       - name: Vault
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
-  - id: 1          # Ethereum Mainnet (nexus-v1)
+  - id: 1          # Ethereum Mainnet (nexus-v1 + nexus-v2)
     start_block: 25122336
     contracts:
       - name: Vault
         address:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
-  - id: 10         # Optimism (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 10         # Optimism (nexus-v1 + nexus-v2)
     start_block: 151755723
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 56         # BSC (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 56         # BSC (nexus-v1 + nexus-v2)
     start_block: 99012181
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 137        # Polygon (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 137        # Polygon (nexus-v1 + nexus-v2)
     start_block: 87068903
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 143        # Monad Mainnet (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 143        # Monad Mainnet (nexus-v1 + nexus-v2)
     start_block: 75405316
     contracts:
       - name: Vault
         address:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
-  - id: 999        # HyperEVM (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 999        # HyperEVM (nexus-v1 + nexus-v2)
     start_block: 35436098
     contracts:
       - name: Vault
         address:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
-  - id: 8453       # Base (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 8453       # Base (nexus-v1 + nexus-v2)
     start_block: 46160439
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 42161      # Arbitrum One (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 42161      # Arbitrum One (nexus-v1 + nexus-v2)
     start_block: 464126370
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 43114      # Avalanche C-Chain (nexus-v1)
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 43114      # Avalanche C-Chain (nexus-v1 + nexus-v2)
     start_block: 85752042
     contracts:
       - name: Vault
         address:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
   - id: 50104      # Sophon (nexus-v1)
     start_block: 29391337
     contracts:
@@ -114,12 +123,29 @@ networks:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 534352     # Scroll (nexus-v1)
+  - id: 534352     # Scroll (nexus-v1 + nexus-v2)
     start_block: 33745772
     contracts:
       - name: Vault
         address:
           - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 4114       # Citrea Mainnet (nexus-v2)
+    start_block: 8583100
+    hypersync_config:
+      url: https://citrea.hypersync.xyz
+    contracts:
+      - name: Vault
+        address:
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
+  - id: 4326       # MegaETH (nexus-v2)
+    start_block: 18471469
+    hypersync_config:
+      url: https://megaeth.hypersync.xyz
+    contracts:
+      - name: Vault
+        address:
+          - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
 unordered_multichain_mode: true
 field_selection:
   transaction_fields:
