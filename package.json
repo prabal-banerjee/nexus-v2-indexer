@@ -11,8 +11,14 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
-    "envio": "2.32.12",
     "tsx": "^4.19.4",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "envio": "3.2.1"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
   }
 }

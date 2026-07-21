@@ -1,9 +1,10 @@
+import type { EvmOnEventContext } from "envio";
 /* TypeScript file generated from Types.res by genType. */
 
 /* eslint-disable */
 /* tslint:disable */
 
-import type {HandlerContext as $$handlerContext} from './Types.ts';
+import type {EvmOnEventContext as $$EvmOnEventContext} from './Types.ts';
 
 import type {HandlerWithOptions as $$fnWithEventConfig} from './bindings/OpaqueTypes.ts';
 
@@ -13,7 +14,7 @@ import type {SingleOrMultiple as $$SingleOrMultiple_t} from './bindings/OpaqueTy
 
 import type {VaultEvent_t as Entities_VaultEvent_t} from '../src/db/Entities.gen';
 
-import type {entityHandlerContext as Internal_entityHandlerContext} from 'envio/src/Internal.gen';
+import type {entityEvmOnEventContext as Internal_entityEvmOnEventContext} from 'envio/src/Internal.gen';
 
 import type {eventOptions as Internal_eventOptions} from 'envio/src/Internal.gen';
 
@@ -53,9 +54,9 @@ export type entityLoaderContext<entity,indexedFieldOperations> = {
 
 export type loaderContext = $$loaderContext;
 
-export type entityHandlerContext<entity> = Internal_entityHandlerContext<entity>;
+export type entityEvmOnEventContext<entity> = Internal_entityEvmOnEventContext<entity>;
 
-export type handlerContext = $$handlerContext;
+export type EvmOnEventContext = $$EvmOnEventContext;
 
 export type vaultEvent = Entities_VaultEvent_t;
 export type VaultEvent = vaultEvent;
@@ -91,7 +92,7 @@ export type HandlerTypes_loaderArgs<eventArgs> = Internal_genericLoaderArgs<even
 
 export type HandlerTypes_loader<eventArgs,loaderReturn> = Internal_genericLoader<HandlerTypes_loaderArgs<eventArgs>,loaderReturn>;
 
-export type HandlerTypes_handlerArgs<eventArgs,loaderReturn> = Internal_genericHandlerArgs<eventLog<eventArgs>,handlerContext,loaderReturn>;
+export type HandlerTypes_handlerArgs<eventArgs,loaderReturn> = Internal_genericHandlerArgs<eventLog<eventArgs>,EvmOnEventContext,loaderReturn>;
 
 export type HandlerTypes_handler<eventArgs,loaderReturn> = Internal_genericHandler<HandlerTypes_handlerArgs<eventArgs,loaderReturn>>;
 
@@ -132,7 +133,7 @@ export type Vault_Deposit_loaderArgs = Internal_genericLoaderArgs<Vault_Deposit_
 
 export type Vault_Deposit_loader<loaderReturn> = Internal_genericLoader<Vault_Deposit_loaderArgs,loaderReturn>;
 
-export type Vault_Deposit_handlerArgs<loaderReturn> = Internal_genericHandlerArgs<Vault_Deposit_event,handlerContext,loaderReturn>;
+export type Vault_Deposit_handlerArgs<loaderReturn> = Internal_genericHandlerArgs<Vault_Deposit_event,EvmOnEventContext,loaderReturn>;
 
 export type Vault_Deposit_handler<loaderReturn> = Internal_genericHandler<Vault_Deposit_handlerArgs<loaderReturn>>;
 
@@ -184,7 +185,7 @@ export type Vault_Fulfilment_loaderArgs = Internal_genericLoaderArgs<Vault_Fulfi
 
 export type Vault_Fulfilment_loader<loaderReturn> = Internal_genericLoader<Vault_Fulfilment_loaderArgs,loaderReturn>;
 
-export type Vault_Fulfilment_handlerArgs<loaderReturn> = Internal_genericHandlerArgs<Vault_Fulfilment_event,handlerContext,loaderReturn>;
+export type Vault_Fulfilment_handlerArgs<loaderReturn> = Internal_genericHandlerArgs<Vault_Fulfilment_event,EvmOnEventContext,loaderReturn>;
 
 export type Vault_Fulfilment_handler<loaderReturn> = Internal_genericHandler<Vault_Fulfilment_handlerArgs<loaderReturn>>;
 
