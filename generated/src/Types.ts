@@ -2,7 +2,7 @@
 // which we can't get using GenType
 // Use @genType.import to link the types back to ReScript code
 
-import type { Logger, EffectCaller } from "envio";
+import type { EvmOnEventContext, Logger, EffectCaller } from "envio";
 import type * as Entities from "./db/Entities.gen.ts";
 
 export type LoaderContext = {
@@ -65,7 +65,7 @@ export type LoaderContext = {
   }
 };
 
-export type HandlerContext = {
+export type EvmOnEventContext = {
   /**
    * Access the logger instance with event as a context. The logs will be displayed in the console and Envio Hosted Service.
    */

@@ -3,3 +3,4 @@ generated/lib/
 generated/src/**/*.res.js
 generated/src/**/*.res.mjs
 generated/persisted_state.envio.json
+.env

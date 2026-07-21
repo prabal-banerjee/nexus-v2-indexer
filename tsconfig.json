@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020"],
-    "types": ["node"],
-    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es2022",
+    "allowJs": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "generated": ["./generated"],
-      "generated/*": ["./generated/*"]
-    },
-    "ignoreDeprecations": "6.0"
-  },
-  "include": ["src/**/*", "generated/**/*"],
-  "exclude": ["node_modules"]
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "strict": false,
+    "noImplicitOverride": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "lib": [
+      "es2022"
+    ],
+    "types": [
+      "node"
+    ]
+  }
 }

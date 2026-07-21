@@ -5,7 +5,7 @@ contracts:
     events:
       - event: Deposit(bytes32 indexed requestHash, address from)
       - event: Fulfilment(bytes32 indexed requestHash, address from, address solver)
-networks:
+chains:
   - id: 11155111      # Sepolia (testnet)
     start_block: 10604152
     contracts:
@@ -158,7 +158,6 @@ networks:
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
           - "0xa009A9Fdc0eF474e7A3938a89f80329139291568"
-unordered_multichain_mode: true
 field_selection:
   transaction_fields:
     - hash
