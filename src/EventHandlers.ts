@@ -1,6 +1,6 @@
-import { Vault } from "../generated/src/Handlers.gen";
+import { indexer } from "envio";
 
-Vault.Deposit.handler(async ({ event, context }) => {
+indexer.onEvent({ contract: "Vault", event: "Deposit" }, async ({ event, context }) => {
   context.VaultEvent.set({
     id: `${event.chainId}_${event.transaction.hash}_${event.logIndex}`,
     requestHash: event.params.requestHash,
@@ -15,7 +15,7 @@ Vault.Deposit.handler(async ({ event, context }) => {
   });
 });
 
-Vault.Fulfilment.handler(async ({ event, context }) => {
+indexer.onEvent({ contract: "Vault", event: "Fulfilment" }, async ({ event, context }) => {
   context.VaultEvent.set({
     id: `${event.chainId}_${event.transaction.hash}_${event.logIndex}`,
     requestHash: event.params.requestHash,
