@@ -1,5 +1,7 @@
-# HyperIndex v3 codegen output. `.envio/` ships its own .gitignore for the
-# ephemeral types; `envio-env.d.ts` is a committed stub that references them.
-.envio/logs/
+# Generated build artifacts (but keep the folder structure and essential files)
+generated/lib/
+generated/src/**/*.res.js
+generated/src/**/*.res.mjs
+generated/persisted_state.envio.json
 node_modules/
 .env

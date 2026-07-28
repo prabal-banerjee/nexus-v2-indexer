@@ -17,7 +17,7 @@ Chains: Sepolia, Arbitrum Sepolia, Base Sepolia, Polygon Amoy.
 
 ### Prerequisites
 
-- Node.js 22+ (required by HyperIndex v3)
+- Node.js 18+
 - [Envio CLI](https://docs.envio.dev/docs/HyperIndex/installation)
 - Access to the Nexus statekeeper (for vault address discovery)
 

@@ -105,7 +105,7 @@ async function fetchVaultInfo(chainId: number, chainName: string): Promise<Vault
 // ---------------------------------------------------------------------------
 
 function generateConfigYaml(vaults: VaultInfo[]): string {
-  const chainEntries = vaults.map((v) => {
+  const networkEntries = vaults.map((v) => {
     // Start indexing from a few hundred blocks before the latest known block.
     // This gives a buffer to catch any recent events that haven't been processed,
     // while avoiding indexing from genesis which would be extremely slow.
@@ -129,8 +129,9 @@ function generateConfigYaml(vaults: VaultInfo[]): string {
     '    events:',
     '      - event: Deposit(bytes32 indexed requestHash, address from)',
     '      - event: Fulfilment(bytes32 indexed requestHash, address from, address solver)',
-    'chains:',
-    ...chainEntries,
+    'networks:',
+    ...networkEntries,
+    'unordered_multichain_mode: true',
     '',
   ].join('\n')
 }

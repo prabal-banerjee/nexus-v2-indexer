@@ -5,7 +5,7 @@ contracts:
     events:
       - event: Deposit(bytes32 indexed requestHash, address from)
       - event: Fulfilment(bytes32 indexed requestHash, address from, address solver)
-chains:
+networks:
   - id: 11155111      # Sepolia (testnet)
     start_block: 10604152
     contracts:
@@ -120,20 +120,6 @@ chains:
           - "0xAc73E77b4FE9BBAAA35C7147DC3Fd5286929A746"
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
           - "0xa009A9Fdc0eF474e7A3938a89f80329139291568"
-  - id: 50104      # Sophon (v1)
-    skip: true
-    start_block: 29391337
-    contracts:
-      - name: Vault
-        address:
-          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
-  - id: 59144      # Linea (v1)
-    skip: true
-    start_block: 30691399
-    contracts:
-      - name: Vault
-        address:
-          - "0x111111eA4f8BdfB5AE22c37ebC3eE17b82072F57"
   - id: 534352     # Scroll (v1 + canary + mainnet)
     start_block: 33745772
     contracts:
@@ -160,6 +146,7 @@ chains:
         address:
           - "0x86B60E813f9b739516dDbDc443526be5Ef8336aa"
           - "0xa009A9Fdc0eF474e7A3938a89f80329139291568"
+unordered_multichain_mode: true
 field_selection:
   transaction_fields:
     - hash
